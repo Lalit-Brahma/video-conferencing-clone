@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#video-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+video {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    padding: 8px;
+    border-radius: 30px;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+}
+
+.main__left  {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__right {
+    flex: 0.2;
+}
+
+.main__videos {
+    flex-grow: 1;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__controls {
+    display: flex;
+    background-color: #222425;
+    color: antiquewhite;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.main__controls__block {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.main__controls__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3px;
+    align-items: center;
+    background-color: #3D3D42;
+    border-radius: 50px;
+    font-size: 24px;
+    padding: 6px 6px;
+    min-width: 60px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.main__controls__button:hover {
+    background-color: rgb(85, 91, 97);
+    border-radius: 50px;
+}
+
+
+.main__controls__button__right {
+    display: flex;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.main__controls__button__right:hover {
+    background-color: rgb(232, 57, 57);
+    border-radius: 10px;
+}
+
+.main__right {
+    display: flex;
+    flex-direction: column;
+    background-color:  #242324;
+    border-left: 1px solid #3D3D42;
+}
+
+.main__header {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.main__chat_window {
+    flex-grow: 1;
+    margin-right: 8px;
+    overflow-y: scroll;
+}
+
+.main__message_container {
+    display: flex;
+    padding: 22px 12px;
+}
+
+.main__message_container input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+}
+
+.messages {
+    color: white;
+    list-style: none;
+}
+
+.unmute {
+    color: red;
+}
+
+.stop {
+    color: red;
+}
+
+.over {
+    white-space: normal;
+}
+
+.user {
+    display: flex;
+    background-color: #db851d;
+    font-family: sans-serif;
+    /* align-content: right; */
+    text-align: right;
+}
+
+.other {
+    display: flex;
+    background-color: #dbd51d;
+    font-family: sans-serif;
+    text-align: left;
+}
